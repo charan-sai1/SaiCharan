@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Charan Sugali</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Antonio:wght@100..700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Hide all content and show message on smaller screens */
+        .mobile-message {
+            display: none;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: white;
+            color: black;
+            font-size: 24px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            body {
+                overflow: hidden;
+            }
+
+            .nav,
+            .home,
+            .edu,
+            .sec,
+            #invertedcursor {
+                display: none;
+            }
+
+            .mobile-message {
+                display: flex;
+            }
+        }
+
+        .scroll1,
+        .scroll2 {
+            width: 100vw;
+            text-wrap: nowrap;
+            position: absolute;
+            font-size: 500px;
+            color: #9eb2b223;
+            font-family: onest;
+            transition: ease 300ms;
+            margin: 0;
+            opacity: 0;
+            z-index: -1;
+            /* Lower z-index */
+
+        }
+
+        .scroll1 {
+            animation: q 5s alternate-reverse infinite;
+            top: -100px;
+        }
+
+        .scroll2 {
+            animation: r 5s alternate-reverse infinite;
+            top: 270px;
+        }
+
+        @keyframes q {
+            0% {
+                transform: translate(-2000px);
+            }
+
+            90% {
+                opacity: 1;
+
+            }
+
+            100% {
+                transform: translate(2000px);
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes r {
+            0% {
+                transform: translate(2000px);
+            }
+
+            90% {
+                opacity: 1;
+
+            }
+
+            100% {
+                transform: translate(-2000px);
+                opacity: 0.5;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="invertedcursor"></div>
+
+    <h1 class="scroll1">Engineer</h1>
+    <h1 class="scroll2" id="#aas">Fresher</h1>
+    <div class="nav">
+        <a class="navlinks" onclick="scrollToPercentage(0)">HOME</a>
+        <a class="navlinks" onclick="scrollToPercentage(32)">EDUCATION</a>
+        <a class="navlinks" onclick="scrollToPercentage(64)">SKILLS</a>
+        <a class="navlinks" onclick="scrollToPercentage(97)">WORK</a>
+        <button type="button" onclick="location.href= 'contact.html'"></button>
+    </div>
+    <section class="home" style="z-index: 10;">
+        <img src="images/home.png" alt="">
+    </section>
+    <section class="edu">
+        <img src="images/edd.png" alt="">
+    </section>
+    <section class="sec">
+        <div class="mainframe">
+            <div class="frame">
+                <div class="subframe1" id="f1">
+                    <div class="box" id="A1" onclick="location.href='UIUX.html'">
+                        <h2>UI/UX</h2>
+                        <img src="images/arrowbtn.png" alt="">
+                    </div>
+                    <div class="box" id="A2" onclick="location.href='iot.html'">
+                        <h2>EMBEDDED <br>SYSTEMS</h2>
+                        <img src="images/arrowbtn.png" alt="">
+                    </div>
+                </div>
+
+                <div class="subframe2" id="f2">
+                    <div class="part1">
+                        <div class="box" id="B1" onclick="location.href='iot.html'">
+                            <h2>IOT</h2>
+                            <img src="images/arrowbtn.png" alt="">
+                        </div>
+                        <div id="B2" class="ebox"></div>
+                        <div id="B4" class="ebox"></div>
+                        <div class="xasa">
+                            <div class="box" id="B3" onclick="location.href='drone.html'">
+                                <h2>DRONE TECHNOLOGY</h2>
+                                <img src="images/arrowbtn.png" alt="">
+                            </div>
+                            <div class="box" id="B5" onclick="location.href='webdev.html'">
+                                <h2>WEB DEV</h2>
+                                <img src="images/arrowbtn.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part2">
+                        <div class="x1">
+                            <div class="xbox" id="a"></div>
+                            <div class="xbox" id="b"></div>
+                        </div>
+                        <div class="box" id="C1" onclick="location.href='ps.html'">
+                            <h2>PHOTOSHOP</h2>
+                            <img src="images/arrowbtn.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="subframe3">
+                    <div class="xbox" id="D1"></div>
+                    <div class="box" id="D2" onclick="location.href='ai.html'">
+                        <h2>Artificial <br> intelligence</h2>
+                        <img src="images/arrowbtn.png" alt="">
+                    </div>
+                </div>
+                <div class="subframe4">
+                    <div class="set1">
+                        <div class="box" id="E2" onclick="location.href='photography.html'">
+                            <h2>PHOTOGRAPHY</h2>
+                            <img src="images/arrowbtn.png" alt="">
+                        </div>
+                        <div class="xbox" id="s1"></div>
+                    </div>
+                    <div class="setx">
+                        <div class="set2">
+                            <div class="subset">
+                                <div class="xbox" id="x1"></div>
+                                <div class="xbox" id="x2"></div>
+                            </div>
+                            <div class="subset">
+                                <div class="box" id="art">
+                                    <h2>art</h2>
+                                    <img src="images/arrowbtn.png" alt="">
+                                </div>
+                            </div>
+                            <div class="subset">
+                                <div class="box" id="art2">
+                                    <h2>Video Editing</h2>
+                                    <img src="images/arrowbtn.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set3">
+                            <div class="box" id="art3" onclick="location.href='event.html'">
+                                <h2>Event <br> Management</h2>
+                                <img src="images/arrowbtn.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xbox" id="set3"></div>
+                </div>
+            </div>
+        </div>
+        <img src="images/Frame 46.png" alt="">
+    </section>
+    <div class="mobile-message">
+        <p>Please switch to a desktop or laptop to view this content.</p>
+    </div>
+    <script>
+        document.body.onmousemove = function (e) {
+            document.documentElement.style.setProperty(
+                '--x', (
+                    e.clientX + window.scrollX
+                )
+            + 'px'
+            );
+            document.documentElement.style.setProperty(
+                '--y', (
+                    e.clientY + window.scrollY
+                )
+            + 'px'
+            );
+        }
+
+        function scrollToPercentage(percentage) {
+            const height = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPosition = height * (percentage / 100);
+            window.scrollTo({
+                top: scrollPosition,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+
+</html>

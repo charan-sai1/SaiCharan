@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Charan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+</head>
+</head>
+
+<body>
+    <style>
+        body {
+            cursor: none;
+            width: 100vw;
+            overflow-x: hidden;
+            margin: 0;
+            background-color: black;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        .back {
+            z-index: 9999;
+            left: 50%;
+            font-weight: lighter;
+            font-family: "Raleway", sans-serif;
+            position: fixed;
+            backdrop-filter: blur(10px);
+            /* Ensures the button remains visible when scrolling */
+            width: 40px;
+            height: 40px;
+            display: flex;
+            font-weight: 100;
+            margin: 10px auto;
+            /* Enables centering elements within the button */
+            justify-content: center;
+            /* Horizontally centers content */
+            align-items: center;
+            /* Vertically centers content */
+            border-radius: 50%;
+            /* Creates a circular button */
+            background-color: rgba(53, 53, 53, 0.43);
+            color: rgb(143, 143, 143);
+            /* Ensures clear visibility of the X mark */
+            font-size: 20px;
+            /* Adjust font size for a well-proportioned X mark */
+            font-weight: bold;
+            /* Makes the X mark more prominent */
+            cursor: pointer;
+            /* Indicates interactivity on hover */
+            transition: background-color 0.2s ease-in-out;
+            /* Adds a smooth hover effect */
+        }
+
+        .back:hover {
+            cursor: none;
+            background-color: white;
+        }
+
+        #invertedcursor {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #FF6B11;
+            border-radius: 50%;
+            top: var(--y, 0);
+            left: var(--x, 0);
+            transform: translate(-50%, -50%);
+            z-index: 200;
+            mix-blend-mode: difference;
+            transition: transform .2s;
+            pointer-events: none;
+            transition: ease-in-out 20ms;
+        }
+
+        h1 {
+            width: 100vw;
+            text-wrap: nowrap;
+            position: absolute;
+            top: -450px;
+            font-size: 500px;
+            color: #9eb2b22e;
+            font-family: onest;
+            animation: q 5s alternate 1;
+            transition: ease 300ms;
+        }
+
+
+        @keyframes q {
+            0% {
+                transform: translate(-6000px);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        .scrollx{
+            width: 90%;
+            height: 600px;
+            position: absolute;
+            overflow: hidden;
+            left: 5%;
+            border-radius: 45px;
+            top: 400px;
+        }
+        
+                .slide{
+                    transition: ease-in-out 2s;
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    color: rgb(255, 255, 255);
+                    font-family: onest;
+                }
+
+        .content{
+            text-align: center;
+            justify-content: center;
+            top: 50%;
+            width: 100%;
+            height: 50%;
+            position: absolute;
+
+        }
+
+        .overly{
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.773));
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            left: 0;
+        }
+        .title{
+            margin-top: 100px;
+            margin-bottom: 0;
+            font-size: 64px;
+            animation: slidein 1s 1;
+        }
+        .disc{
+
+            animation-delay: 1s;
+            animation: fade 3s 1;
+        }
+        @keyframes slidein {
+            from{
+                opacity: 0;
+                transform: translateX(-150px);
+            }
+            to{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fade {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+    </style>
+    <h1>Event Management</h1>
+    <div id="invertedcursor"></div>
+    <div class="back" onclick="location.href='index.html'">x</div>
+    <img src="images/events.jpg" alt="">
+    <div class="scrollx">
+        <div class="overly"></div>
+        <div class="slide" id="s0"><img src="events/15.jpg" alt=""><div class="content"><h2 class="title"> President of ACME Team </h2><p class="disc">At the helm of ACME, I orchestrate impactful events and empower our team to thrive.</p></div></div>
+        <div class="slide" id="s1"><img src="events/18.jpg" alt=""><div class="content"><h2 class="title">Inauguration ceremony</h2><p class="disc">Ushering in a new chapter, I orchestrated a momentous Inauguration Ceremony to welcome and inspire Juniors.</p></div></div>
+        <div class="slide" id="s2"><img src="events/17.jpg" alt=""><div class="content"><h2 class="title">Butter Milk Serving</h2><p class="disc">ACME's Young Caliber beat the summer heat by serving up cool relief to local hospitals in a beautiful act of social service.</p></div></div>
+        <div class="slide" id="s3"><img src="events/19.jpg" alt=""><div class="content"><h2 class="title">ACME Team Discussion</h2><p class="disc">High-fives around the table as the ACME team celebrates another successful event season, brainstorming future triumphs.</p></div></div>
+        <div class="slide" id="s4"><img src="events/16.jpg" alt=""><div class="content"><h2 class="title">Power-point presentation competition </h2><p class="disc">Leaning on my presentation expertise, I adjudicated a dynamic Power Point competition, fostering a spirit of visual storytelling among ACME members.</p></div></div>
+        <div class="slide" id="s5"><img src="events/1.jpg" alt=""><div class="content"><h2 class="title">Cancer Awareness</h2><p class="disc">empowering future generations, I spearheaded a cancer awareness program in government schools, equipping young minds to fight the good fight.</p></div></div>
+        <div class="slide" id="s6"><img src="events/2.jpg" alt=""><div class="content"><h2 class="title">Cancer Awareness</h2><p class="disc">empowering future generations, I spearheaded a cancer awareness program in government schools, equipping young minds to fight the good fight.</p></div></div>
+        <div class="slide" id="s7"><img src="events/3.jpg" alt=""><div class="content"><h2 class="title">JAM</h2><p class="disc">Sparking interest and friendly rivalry, I introduced JAM (Just a Minute) to our juniors through a lively competition, igniting their public speaking passion.</p></div></div>
+        <div class="slide" id="s8"><img src="events/4.jpg" alt=""><div class="content"><h2 class="title">technical Questionary</h2><p class="disc">Gearing up for the challenge, I dove into a technical questionary to assess my strengths and identify areas for growth.</p></div></div>
+        <div class="slide" id="s9"><img src="events/5.jpg" alt=""><div class="content"><h2 class="title">Over 70+ events</h2><p class="disc">Shattering expectations, I led ACME in a record-breaking year, orchestrating over 70 impactful events.</p></div></div>
+        <div class="slide" id="s10"><img src="events/6.jpg" alt=""><div class="content"><h2 class="title">Three main clubs</h2><p class="disc">Technocrats | Communion | Young Caliber </p></div></div>
+        <div class="slide" id="s11"><img src="events/7.jpg" alt=""><div class="content"><h2 class="title">Power-point presentation competition </h2><p class="disc">Leaning on my presentation expertise, I adjudicated a dynamic Power Point competition, fostering a spirit of visual storytelling among ACME members.</p></div></div>
+        <div class="slide" id="s12"><img src="events/8.png" alt=""><div class="content"><h2 class="title">Distribution of Blankets to Homeless</h2><p class="disc">Braving the cold, I spearheaded a blanket distribution for the homeless, bringing warmth and comfort to those in need.</p></div></div>
+        <div class="slide" id="s13"><img src="events/10.jpg" alt=""><div class="content"><h2 class="title">Assigning works to my Teammates</h2><p class="disc">Strategically deploying my team, I prepped for the upcoming event by delegating tasks for maximum impact.</p></div></div>
+        <div class="slide" id="s14"><img src="events/11.jpg" alt=""><div class="content"><h2 class="title">Motivational talk with students</h2><p class="disc">Igniting your potential, I delivered a motivational talk that set hearts ablaze and minds racing with possibilities.</p></div></div>
+        <div class="slide" id="s15"><img src="events/12.jpg" alt=""><div class="content"><h2 class="title">Motivational talk with students</h2><p class="disc">Igniting your potential, I delivered a motivational talk that set hearts ablaze and minds racing with possibilities.</p></div></div>
+        <div class="slide" id="s16"><img src="events/13.jpg" alt=""><div class="content"><h2 class="title">Personality building events</h2><p class="disc">Fostering confidence and character, we curated engaging personality-building events to empower our ACME members.</p></div></div>
+        <div class="slide" id="s17"><img src="events/14.jpg" alt=""><div class="content"><h2 class="title"></h2><p class="disc"></p></div></div>
+    </div>
+
+    <script>document.body.onmousemove = function (e) {
+            document.documentElement.style.setProperty(
+                '--x', (
+                    e.clientX + window.scrollX
+                )
+            + 'px'
+            );
+            document.documentElement.style.setProperty(
+                '--y', (
+                    e.clientY + window.scrollY
+                )
+            + 'px'
+            );
+        }
+        function displayElements() {
+    let currentIndex = 0;
+    const totalElements = 18;
+    const fadeDuration = 500; // Fade duration in milliseconds
+    const displayDuration = 2500; // Display duration in milliseconds
+
+    function showNextElement() {
+        const currentElement = document.getElementById('s' + currentIndex);
+        const nextIndex = (currentIndex + 1) % totalElements;
+        const nextElement = document.getElementById('s' + nextIndex);
+
+        // Fade out the current element
+        currentElement.style.transition = `opacity ${fadeDuration}ms`;
+        currentElement.style.opacity = 0;
+
+        // After fading out, hide the current element and show the next element
+        setTimeout(() => {
+            currentElement.style.display = 'none';
+
+            // Show and fade in the next element
+            nextElement.style.display = 'block';
+            nextElement.style.transition = `opacity ${fadeDuration}ms`;
+            nextElement.style.opacity = 1;
+
+            // Move to the next element after the display duration
+            currentIndex = nextIndex;
+            setTimeout(showNextElement, displayDuration);
+        }, fadeDuration);
+    }
+
+    // Initially hide all elements except the first one
+    for (let i = 0; i < totalElements; i++) {
+        const element = document.getElementById('s' + i);
+        element.style.display = i === 0 ? 'block' : 'none';
+        element.style.opacity = i === 0 ? 1 : 0;
+    }
+
+    // Start the loop after the initial display duration
+    setTimeout(showNextElement, displayDuration);
+}
+
+// Start displaying elements when the page loads
+window.onload = displayElements;
+
+        </script>
+</body>
+
+</html>

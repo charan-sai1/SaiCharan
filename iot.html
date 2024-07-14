@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Charan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="cards.css">
+</head>
+
+<body>
+    <style>
+        body {
+            cursor: none;
+            width: 100%;
+            margin: 0;
+            background-color: black;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .back {
+
+            left: 50%;
+            font-weight: lighter;
+            font-family: "Raleway", sans-serif;
+            position: fixed;
+            backdrop-filter: blur(10px);
+            /* Ensures the button remains visible when scrolling */
+            width: 40px;
+            height: 40px;
+            display: flex;
+            font-weight: 100;
+            margin: 10px auto;
+            /* Enables centering elements within the button */
+            justify-content: center;
+            /* Horizontally centers content */
+            align-items: center;
+            /* Vertically centers content */
+            border-radius: 50%;
+            /* Creates a circular button */
+            background-color: rgba(53, 53, 53, 0.43);
+            color: rgb(143, 143, 143);
+            /* Ensures clear visibility of the X mark */
+            font-size: 20px;
+            /* Adjust font size for a well-proportioned X mark */
+            font-weight: bold;
+            /* Makes the X mark more prominent */
+            cursor: pointer;
+            /* Indicates interactivity on hover */
+            transition: background-color 0.2s ease-in-out;
+            /* Adds a smooth hover effect */
+            z-index: 100;
+        }
+
+        .back:hover {
+            cursor: none;
+            background-color: white;
+        }
+
+        #invertedcursor {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #FF6B11;
+            border-radius: 50%;
+            top: var(--y, 0);
+            left: var(--x, 0);
+            transform: translate(-50%, -50%);
+            z-index: 200;
+            mix-blend-mode: difference;
+            transition: transform .2s;
+            pointer-events: none;
+            transition: ease-in-out 20ms;
+        }
+
+        .frame {
+            position: absolute;
+            width: 1280px;
+            height: 600px;
+            top: 200px;
+            left: 130px;
+            opacity: 1;
+            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 628px;
+            height: 300px;
+            border-radius: 48px;
+            margin-top: 1px;
+            overflow: hidden;
+        }
+        
+        .link {
+            transition: ease-in-out 300ms;
+            width: 68px;
+            mix-blend-mode: overlay ;
+            float: right;
+            height: 100%;
+            background-color: orange;
+            filter: saturate(150%);
+            opacity: 0;
+        }
+
+        .card:hover .link {
+            opacity: 1;
+        }
+    </style>
+    <div id="invertedcursor"></div>
+    <div class="back" onclick="location.href='index.html'">x</div>
+    <img src="images/IOT.jpg" alt="">
+    <div class="frame">
+        <div class="card" onclick="window.open('https://www.tinkercad.com/things/7tUKeegQ7oP-room-temp-controller')">
+            <div class="link"></div>
+        </div>
+        <div class="card"onclick="window.open('https://www.tinkercad.com/things/fv0rvKe26nc-obstacle-robot-car')">
+            <div class="link" ></div>
+        </div>
+        <div class="card">
+            <div class="link" ></div>
+        </div>
+    </div>
+
+    <script>document.body.onmousemove = function (e) {
+            document.documentElement.style.setProperty(
+                '--x', (
+                    e.clientX + window.scrollX
+                )
+            + 'px'
+            );
+            document.documentElement.style.setProperty(
+                '--y', (
+                    e.clientY + window.scrollY
+                )
+            + 'px'
+            );
+        }</script>
+</body>
+
+</html>

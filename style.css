@@ -1,0 +1,298 @@
+html{
+   cursor: none; 
+}
+body {
+    background-color: black;
+    display: block;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll; /* Ensure the body can scroll */
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#invertedcursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #FF6B11;
+    border-radius: 50%;
+    top: var(--y, 0);
+    left: var(--x, 0);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    mix-blend-mode: difference;
+    transition: transform .2s;
+    pointer-events: none;
+    transition: ease-in-out 20ms;
+  }
+
+.nav {
+    position: sticky;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 481px;
+    height: 58px; /* Ensure height unit is correct */
+    padding:5px 20px;
+    top: 10px; /* Ensure the nav stays at the top */
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    justify-content: space-between;
+    font-family: "Antonio", sans-serif;
+    color: white;
+    text-decoration: none;
+    display: flex; /* Add display flex to align items properly */
+}
+
+.nav a:hover {
+    scale: 1.15;
+}
+.nav a {
+    transition: ease-in 100ms;
+    padding: 10px;
+    cursor:none;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav button {
+    cursor: none;
+    background: url(./images/contactbtn.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 111px;
+    height: 38px;
+    border: none;
+}
+
+
+.home, .edu, .sec {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.home img, .edu img,.sec img {
+    width: 100%;
+}
+.mainframe{
+   width: 90vw;
+   height: 380px;
+   overflow-x: scroll; 
+   overflow-y: hidden; 
+   position: absolute;
+   top: 182vw;
+   left: 5vw;
+   scroll-behavior: smooth;
+}
+.frame{
+    overflow-y: hidden; 
+    width: fit-content;
+    height: 498px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.subframe1{
+    width: 245px;
+    height: 378px;
+    display: flex;
+    flex-direction: column;
+}
+.box  h2{
+    width: fit-content;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0;
+    color: whitesmoke;
+}
+.box img{
+    width: 16px;
+    height: 16px;
+}
+.box:hover{
+    filter: drop-shadow(0 0 15px black);
+    scale: 1.01;
+}
+.box{
+    padding: 10px;
+    font-family: "Anton SC", sans-serif;
+    transition: ease-in-out 50ms;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-wrap: wrap;
+    margin: 3px;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: #4D4D4D;
+}
+
+#A1{
+    width: 220px;
+    height: 90px;
+    font-size: 24px;
+}
+
+#A2{
+    width: 220px;
+    height: 254px;
+    font-size: 24px;   
+}
+
+.subframe2{
+    width: 445px;
+    height: 378px;
+    display: block;
+}
+
+.part1{
+    width: 100%;
+    height: 204px;
+    display: relative;
+}
+
+#B1{
+    width: 259px;
+    height: 46px;
+}
+
+#B1 h2{
+    font-size: 20px;
+}
+
+.ebox{
+    position: absolute;
+    background-color:#383838;
+    border-radius: 10px;
+}
+
+#B2{
+    top:0.15rem;
+    left: 33.65rem;
+    width: 150px;
+    height: 100px;
+}
+
+#B3{
+    font-size: 16px;
+    width: 192px;
+    height:127px;
+    margin-top:5px;
+}
+#B3 h2{
+    width: min-content;
+    font-size: 26px;
+}
+#B4{
+    top:4.6rem;
+    left: 29.5rem;
+    width: 53px;
+    height: 26px;
+}
+
+#B5{
+    font-size: 24px;
+    width: 224px;
+    height:94px;
+    margin-top:37px;
+}
+.xasa{
+    display: flex;
+    flex-direction: row;
+}
+.xbox{
+    background-color:#383838;
+    border-radius: 10px;
+}
+.x1{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#a{
+    width: 67px;
+    height: 56px;
+}
+#b{
+    width: 370px;
+    height: 56px;
+}
+#C1{
+    margin-top: 7px;
+    font-size: 24px;
+    width: 420px;
+    height: 58px;
+}
+#D1{
+    width: 507px;
+    height: 49px;
+}
+#D2{
+    margin-top: 5px;
+    font-size: 32px;
+    width: 485px;
+    height: 295px;
+}
+.subframe3{
+    height: 378px;
+    width: 510px;
+}
+.subframe4{
+    height: 378px;
+    width: 400px;
+}
+.setx{
+    display: flex;
+    gap: 5px;
+    width: fit-content;
+}
+.set1{
+    display: flex;
+    width: 100%;
+    height: 118px;
+}
+
+#s1{
+    width:509px;
+    height: 115px;
+}
+.subset{
+    width: 150px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+#x1{
+    width: 75%;
+}
+#x2{
+    width: 20%;
+}
+#art{
+    width: 100%;
+}
+#art2{
+    width: 100%;
+    height: 90%;
+    font-size: 12px;
+    text-wrap: wrap;
+}
+#art3{
+    width: 100%;
+    height: 95%;
+    font-size: 16px;
+    text-wrap: wrap;
+}
+#set3{
+    width: 100%;
+    height: 60px;
+    margin-top: 25px;
+}
