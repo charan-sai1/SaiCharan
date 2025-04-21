@@ -1,0 +1,522 @@
+@font-face {
+  font-family: "Onest";
+  src: url("./fonts/Onest-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "meria";
+  src: url("./fonts/meira-demo.ttf") format("truetype");
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: "led";
+  src: url("./fonts/led_counter-7.ttf") format("truetype");
+  font-weight: 100 900;
+}
+
+.App {
+  color: aliceblue;
+  width: 100%;
+  height: auto;
+  background: url("svg/herBg.png"), black;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: hsla(0, 0%, 100%, 0.05);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  gap: 20px;
+  backdrop-filter: blur(20px);
+  font-family: onest;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 9999;
+}
+.nav:hover {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+.nav p {
+  color: #aeaeae;
+  font-family: 14px;
+  margin: 0;
+  transition: 0.5s;
+}
+.nav p:hover {
+  color: #ffffff;
+}
+.filler {
+  width: 100%; /* Adjusted to utilize full width */
+  margin: auto;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  margin-top: 30vh;
+}
+.blackCrystal {
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  top: 15vh;
+  width: 50vw;
+  pointer-events: none;
+  transition: cubic-bezier(0, 1.26, 0.34, 0.82) 2s;
+}
+.me:hover .blackCrystal {
+  filter: blur(3px);
+  width: 820px;
+}
+.me-mobile {
+  width: 100vw;
+  display: none;
+}
+.education {
+  width: 100%;
+}
+.section2 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background: url(svg/8shape.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.skills {
+  width: 100vw;
+}
+.strip {
+  pointer-events: none;
+  max-width: 100vw;
+}
+.skillName {
+  font-family: "led";
+  font-size: 14px;
+  width: fit-content;
+  min-width: 70vw;
+  border: 0.5px solid white;
+  font-family: "led";
+  font-size: 12px;
+  padding: 10px 10px;
+  text-align: center;
+  border-style: dotted;
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+  background: #8d8d8d26;
+  margin: 0;
+}
+.mSkills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.quality {
+  width: 80%;
+  font-size: 150px;
+  font-family: meria;
+  margin: 0;
+  text-align: right;
+  right: 5%;
+}
+
+.monitor {
+  width: 100vw;
+  margin: auto;
+}
+
+.description {
+  text-align: center;
+  margin: auto;
+  width: 70vw;
+  font-family: onest;
+  font-size: 12px;
+  color: #aeaeae;
+}
+
+.jarvis {
+  position: absolute;
+  top: 420vh;
+  width: 100%; /* Adjusted to utilize full width */
+  max-width: 250px; /* Maintain max width */
+}
+.jarvis-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+}
+.left {
+  left: 5%;
+}
+.right {
+  right: 5%;
+}
+.JarvisBtn {
+  width: fit-content;
+  font-size: 12px;
+  margin: auto;
+  margin: 5px;
+}
+.Projects {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.KeepAside {
+  width: fit-content;
+  font-family: meria;
+  left: 5%;
+  font-size: 150px;
+}
+.domainTitle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  width: 100%;
+  align-items: center;
+}
+.domainP {
+  width: 40%;
+  height: 50%;
+  object-fit: contain;
+  margin-top: 160px;
+  transform: translatex(-125px);
+}
+.AI {
+  width: 30%;
+  object-fit: contain;
+}
+.AiContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: center;
+}
+.Design {
+  width: 99vw;
+  margin-top: 5%;
+}
+.carousel {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.designs {
+  width: 90vw;
+  border: 0.5px solid grey;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.563), transparent),
+    url(./images/designs.png);
+  background-size: cover;
+  border-radius: 30px;
+  margin: 15px auto;
+}
+.Card:hover {
+  filter: drop-shadow(0 0 20px #000000);
+  box-shadow: 0 10px 40px #000000;
+}
+.Card {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 10px #000000);
+  box-shadow: 0 10px 50px #000000b7;
+  backdrop-filter: blur(2px);
+  background-color: #010618;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid grey;
+}
+.Card p {
+  font-style: italic;
+  font-size: 9px;
+}
+
+.cardcont {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 2px;
+}
+
+.git {
+  margin: 10px auto;
+}
+.droneCont {
+  display: block;
+}
+.drone {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.drone-text p {
+  margin: 0;
+}
+.drone-text {
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.drone-tech {
+  font-size: 72px;
+  font-family: onest;
+  font-weight: 900;
+}
+.drone-tech span {
+  background: linear-gradient(60deg, white, #f9a546);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.drone-img {
+  transform: rotate(30deg);
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+.drone-description {
+  width: 60%;
+  margin: auto;
+}
+
+.dms {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 20px;
+  width: 90%;
+  margin: auto 5%;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 40%;
+}
+.tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 0;
+  width: 90%;
+  margin: auto;
+}
+
+.toolsContainer {
+  display: flex;
+  width: 90%;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logoicons {
+  border-radius: 10px;
+  object-fit: contain;
+  margin: 15px;
+  transition: all 0.3s ease-in-out;
+  width: 8rem;
+  width: 8rem;
+}
+.logoicons:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.others{
+  font-family: meria;
+  font-size: clamp(10em, 8em ,6em);
+  width: fit-content;
+  margin: 10vw auto;
+  background-color: red;
+}
+
+.spinner{
+  width: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .designs {
+    width: 90vw;
+    margin-top: 5%;
+    overflow: hidden;
+  }
+  .Design {
+    width: 99vw;
+  }
+  .AI {
+    width: 40%;
+  }
+  .AiContainer {
+    gap: auto;
+  }
+  .me {
+    display: none;
+  }
+  .me-mobile {
+    display: block;
+    margin: auto;
+  }
+  .blackCrystal {
+    display: none;
+  }
+  .filler {
+    height: 20vh;
+    padding-top: 10vh;
+  }
+  .hero {
+    width: 80vw;
+    margin-top: 5vh;
+  }
+  .description {
+    width: 90vw;
+    font-size: 10px;
+  }
+  .jarvis {
+    position: absolute;
+    top: 147vh;
+    width: 70px;
+  }
+  .left {
+    left: 40px;
+  }
+  .strip {
+    top: 245%;
+  }
+  .quality {
+    font-size: 60px;
+    right: 0;
+    width: 100%;
+    margin-top: 10%;
+  }
+  .KeepAside {
+    font-size: 60px;
+  }
+  .skills {
+    width: 80vw;
+  }
+  .domainP {
+    margin-top: 15%;
+    transform: translatex(-10%);
+    width: 55%;
+  }
+  .drone-tech {
+    font-size: 62px;
+  }
+  .drone-img {
+    position: absolute;
+    z-index: 2;
+    right: 0%;
+    transition: all 0.5s ease-in-out;
+    animation: float 2s ease-in-out infinite alternate;
+  }
+  @keyframes float {
+    from {
+      transform: translatey(-20px) rotate(0deg);
+    }
+    to {
+      transform: translatey(-100px) rotate(-15deg) rotateZ(20deg);
+    }
+  }
+  .drone-text {
+    margin: 0 5%;
+    width: 90%;
+  }
+
+  .droneCont {
+    width: 100%;
+    overflow: hidden;
+  }
+  .drone {
+    height: 30vh;
+  }
+  .logoicons {
+    width: 4rem;
+    height: 4rem;
+  }
+  .tools {
+    margin-top: 10vh;
+    flex-direction: column;
+  }
+  .scroll-reveal-text {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  .blackCrystal {
+    display: none;
+  }
+  .me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero {
+    width: 80vw;
+  }
+  .strip {
+    top: 190vh;
+  }
+  .jarvis {
+    position: absolute;
+    top: 300vh;
+    width: 125px;
+  }
+  .quality {
+    font-size: 80px;
+  }
+  .description {
+    width: 90vw;
+  }
+  .logoicons {
+    width: 6rem;
+    height: 6rem;
+  }
+  .tools {
+    margin-top: 1vh;
+    flex-direction: column;
+  }
+}
