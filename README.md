@@ -18,8 +18,9 @@ I am Sai Charan Sugali, a passionate developer and designer. My work focuses on 
 - **Jarvis**: A desktop AI assistant that simplifies daily tasks, helps optimize code, and provides scene narration.
 - **Drone Technology**: Built, assembled, and calibrated drones from scratch, mastering both hardware and flight control.
 - **Creative Design**: Skilled in tools like Photoshop, Figma, and After Effects to create stunning visuals.
+- **Ui Design**: Designed many interfaces for web-sites and applications in tools like figma.
 
-## How to Run the Project
+## To use my Portfolio theme
 
 1. Clone the repository:
    ```bash
