@@ -2,6 +2,13 @@
 
 Welcome to my portfolio! This project showcases my skills, projects, and expertise in various domains, including AI, design, and development.
 
+## Connect with Me
+
+[![Instagram](https://img.shields.io/badge/Instagram-Follow%20Me-red?style=for-the-badge&logo=instagram)](https://instagram.com/your_instagram)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/your_linkedin)
+[![HackerRank](https://img.shields.io/badge/HackerRank-Profile-green?style=for-the-badge&logo=hackerrank)](https://hackerrank.com/your_hackerrank)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-orange?style=for-the-badge&logo=leetcode)](https://leetcode.com/your_leetcode)
+
 ## About Me
 
 I am Sai Charan Sugali, a passionate developer and designer. My work focuses on creating innovative solutions and delivering quality over quantity. I have hands-on expertise in AI, drone technology, and creative design.
@@ -11,13 +18,6 @@ I am Sai Charan Sugali, a passionate developer and designer. My work focuses on 
 - **Jarvis**: A desktop AI assistant that simplifies daily tasks, helps optimize code, and provides scene narration.
 - **Drone Technology**: Built, assembled, and calibrated drones from scratch, mastering both hardware and flight control.
 - **Creative Design**: Skilled in tools like Photoshop, Figma, and After Effects to create stunning visuals.
-
-## Connect with Me
-
-[![Instagram](https://img.shields.io/badge/Instagram-Follow%20Me-red?style=for-the-badge&logo=instagram)](https://instagram.com/your_instagram)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/your_linkedin)
-[![HackerRank](https://img.shields.io/badge/HackerRank-Profile-green?style=for-the-badge&logo=hackerrank)](https://hackerrank.com/your_hackerrank)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-orange?style=for-the-badge&logo=leetcode)](https://leetcode.com/your_leetcode)
 
 ## How to Run the Project
 
