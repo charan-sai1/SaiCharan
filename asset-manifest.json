@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/SaiCharan/static/css/main.babe663f.css",
-    "main.js": "/SaiCharan/static/js/main.2b5f21e6.js",
+    "main.css": "/SaiCharan/static/css/main.be73720a.css",
+    "main.js": "/SaiCharan/static/js/main.08d761a2.js",
     "static/js/488.bcd81411.chunk.js": "/SaiCharan/static/js/488.bcd81411.chunk.js",
     "static/media/Skills.svg": "/SaiCharan/static/media/Skills.75e4b7d6800bc799d711ee10f03f62e9.svg",
     "static/media/Mecard.svg": "/SaiCharan/static/media/Mecard.a4da4f72977b136de5fcb56469d1a1dc.svg",
     "static/media/Mecard-mobile.svg": "/SaiCharan/static/media/Mecard-mobile.c62e8efa6e014c1843a6aa0343934282.svg",
     "static/media/8shape.png": "/SaiCharan/static/media/8shape.f46e7e859b357e88dcd2.png",
+    "static/media/designs-page.jpg": "/SaiCharan/static/media/designs-page.81590dd2d4d4a8b8dd46.jpg",
     "static/media/education.png": "/SaiCharan/static/media/education.266e4aa5193d659a6ea7.png",
     "static/media/whatIamGood.svg": "/SaiCharan/static/media/whatIamGood.f72e1905d4d53885ef170812a9a0e418.svg",
     "static/media/designs.png": "/SaiCharan/static/media/designs.b07d9d51c6541f775849.png",
@@ -35,12 +36,12 @@
     "static/media/word.png": "/SaiCharan/static/media/word.3520590ca5c0502f023d.png",
     "static/media/Google Cloud Platform Logo.png": "/SaiCharan/static/media/Google Cloud Platform Logo.33b6e1dcedaf12e62055.png",
     "index.html": "/SaiCharan/index.html",
-    "main.babe663f.css.map": "/SaiCharan/static/css/main.babe663f.css.map",
-    "main.2b5f21e6.js.map": "/SaiCharan/static/js/main.2b5f21e6.js.map",
+    "main.be73720a.css.map": "/SaiCharan/static/css/main.be73720a.css.map",
+    "main.08d761a2.js.map": "/SaiCharan/static/js/main.08d761a2.js.map",
     "488.bcd81411.chunk.js.map": "/SaiCharan/static/js/488.bcd81411.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.babe663f.css",
-    "static/js/main.2b5f21e6.js"
+    "static/css/main.be73720a.css",
+    "static/js/main.08d761a2.js"
   ]
 }
